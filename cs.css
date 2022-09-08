@@ -1,0 +1,50 @@
+.Flower{
+    max-width: 600px;
+    position: relative;
+}
+.Flower .Flower-item,
+.Flower .Flower-item-hidden {
+    display: none;
+}
+.Flower .Flower-item-visible{
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+.Flower .Flower-item img{
+    width: 100%;
+    max-width:600px;
+    height: auto;
+}
+.Flower .Flower-actions{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.Flower .Flower-actions button{
+    border-radius: 50px;
+    background-color: chartreuse;
+    color: violet;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.Flower .Flower-actions button#Flower-prev{
+    margin-left: 20px;
+}
+.Flower .Flower-actions button#Flower-next{
+    margin-right: 20px;
+}
+@keyframes fadeVisibility{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
